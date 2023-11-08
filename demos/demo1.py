@@ -1,6 +1,9 @@
-def foo(name, age):
+def bar(name, age):
     return name + ' (' + age + ')'
 
 
-result = foo('Lee', 38)
+result = bar('Lee', '38')
+print(result)
+
+bar('Lee', 38)
 print(result)

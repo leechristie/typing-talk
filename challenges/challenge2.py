@@ -9,7 +9,7 @@
 
 # takes a string and parses it to an int or float
 # if it can't be parsed, returns None
-def parse_to_number(s: str) -> int | float | None:
+def parse_to_number(s):
 
     # try to parse to an int, e.g. "42" -> 42
     try:
@@ -31,11 +31,11 @@ def parse_to_number(s: str) -> int | float | None:
 # e.g. "foo 10 hello 3.14 42"
 # gets the numbers ignoring non-numbers
 # e.g. [10, 3.14, 42]
-def get_numbers_from_string(s: str) -> list[int | float]:
+def get_numbers_from_string(s):
 
     # split the string
-    tokens: list[str] = s.split(' ')
-    numbers: list[int | float] = []
+    tokens = s.split(' ')
+    numbers = []
 
     # get each number in the string
     for t in tokens:
@@ -47,7 +47,7 @@ def get_numbers_from_string(s: str) -> list[int | float]:
 
 # given a non-empty collection of numbers,
 # returns the median
-def find_median(numbers: list[int | float]) -> int | float:
+def find_median(numbers):
 
     # check for empty collection
     if not numbers:
