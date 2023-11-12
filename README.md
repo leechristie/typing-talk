@@ -1,1 +1,1 @@
-# typing-talk
+# Gradual Static Typing in Python
